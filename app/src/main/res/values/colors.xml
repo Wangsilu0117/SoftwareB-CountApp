@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#fff</color>
+    <color name="white1">#ffffffff</color>
+    <color name="black">#000</color>
+    <color name="blue">#1ba0e1</color>
+    <color name="blue1">#0c92d4</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_tab_text_color">#000000</color>
+
+    <color name="detail_income">#88cc44</color>
+    <color name="detail_payout">#ff6600</color>
+
+    <color name="color_primary">#ff607d8b</color>
+    <color name="color_primary_dark">#ff455a64</color>
+    <color name="color_accent">@color/color_primary</color>
+
+    <color name="red_light">#ffff4444</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+    <color name="background">#f7f7f7</color>
+    <color name="text_black3">#333333</color>
+    <color name="text_black6">#666666</color>
+    <color name="text_black9">#999999</color>
+    <color name="text_red">#FF5050</color>
+    <color name="text_orange">#FFA500</color>
+    <color name="grey">#a1507d8f</color>
+</resources>

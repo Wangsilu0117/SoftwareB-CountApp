@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/piechart_top_choose"></include>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/pie_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pie_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:background="@mipmap/piechart_center"
+                        android:orientation="vertical">
+
+                        <!--再嵌套了一层，padding="20dp"，是为了避免点击区域覆盖饼状图的区域-->
+                        <LinearLayout
+                            android:id="@+id/pie_layout_center"
+                            android:layout_centerInParent="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pie_center_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="总支出"
+                                android:textColor="@color/text_black6"
+                                android:textSize="15sp"/>
+                            <TextView
+                                android:id="@+id/pie_center_money"
+                                android:layout_marginTop="8dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0.00"
+                                android:textColor="@color/text_black3"
+                                android:textSize="16sp"/>
+                            <ImageView
+                                android:id="@+id/pie_center_img"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/piechart_input"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_pie_typedata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/pie_item_type"
+                        android:paddingLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        >
+
+
+                        <RelativeLayout
+                            android:id="@+id/pie_layout_circle"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            >
+                            <com.hyl.view.CircleImageView
+                                android:id="@+id/pie_circle_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="#f8f4e6"
+                                android:layout_centerInParent="true"
+                                />
+                            <ImageView
+                                android:id="@+id/pie_circle_img"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/qitashouru"
+                                android:scaleType="centerInside"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/pie_detail_title"
+                            android:layout_toRightOf="@+id/pie_layout_circle"
+                            android:layout_marginLeft="11dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类型"
+                            android:textColor="@color/text_black3"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/pie_detail_money"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:text="0.00"
+                            android:textColor="@color/text_black3"
+                            android:textSize="13sp"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#DCDCDC"></View>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/pie_detail_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>>
+
+
+</LinearLayout>

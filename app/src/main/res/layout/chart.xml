@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/chart_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:navigationIcon="@mipmap/ic_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways|snap"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/chart_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c4c6c5" />
+
+    <com.hyl.view.BaseBottomBar
+        android:id="@+id/chart_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="#FFFFFF" >
+
+
+        <RelativeLayout
+            style="@style/tab_radiobutton_style"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:textColor="@drawable/tabbar_text_color"
+                android:text="饼图"
+                android:drawableTop="@drawable/rb_piechart" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            style="@style/tab_radiobutton_style"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:textColor="@drawable/tabbar_text_color"
+                android:text="条形图"
+                app:drawableTopCompat="@drawable/rb_barchart" />
+
+
+        </RelativeLayout>
+
+
+
+    </com.hyl.view.BaseBottomBar>
+
+
+
+</LinearLayout>

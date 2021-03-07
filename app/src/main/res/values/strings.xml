@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">账本管家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="spn_prompt_category">类别</string>
+    <string name="spn_prompt_subcategory">子类别</string>
+    <string name="spn_prompt_account">账户</string>
+    <string name="spn_prompt_corporation">商家</string>
+    <string name="spn_prompt_project">项目</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+
+    <string name="aboutUs">关于我们</string>
+    <string name="jianjie">我们团队立志要开发一款简单的、好用的、人性化 的个人钱包管理APP软件；
+	            此软件能带您轻松管理自己的收入和花销，还有统计和警告功能，再也不用担心钱花超了。</string>
+
+    <string name="login">登录</string>
+    <string name="forgetPwd">忘记密码</string>
+    <string name="startRegist">开始注册</string>
+    <string name="regist">注册</string>
+    <string name="resPwd">重置密码</string>
+    <string name="confirm">确认</string>
+
+    <string name="detail_tab">明细</string>
+    <string name="category_report_tab">类别报表</string>
+
+    <string name="setting">特色设置</string>
+    <string name="setting_des">该功能正在开发中，敬请期待！</string>
+
+    <string name="wish_des">本应用中指纹密码为系统锁屏设置的指纹密码，如需修改请在系统设置中修改。</string>
+
+    <string name="count">统计</string>
+    <string name="count_des">该功能正在开发中，敬请期待！</string>
+
+    <!-- memo——MyDialog -->
+    <string name="dialog_memo_title">备注</string>
+    <string name="dialog_memo_ok">保存</string>
+    <string name="dialog_memo_cancle">取消</string>
+
+    <!-- TransactionTabActivity -->
+    <string name="input_message">请填写金额</string>
+    <string name="edit_message">编辑成功</string>
+    <string name="save_message">保存成功</string>
+    <string name="edit_in">编辑收入</string>
+    <string name="edit_out">编辑支出</string>
+    <string name="title_activity_new_category">NewCategoryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ChangePsw">修改密码</string>
+    <string name="pwd_text">修改文本密码</string>
+    <string name="verify">验证</string>
+    <string name="password">密码</string>
+    <string name="text_password">密码设置</string>
+    <string name="text_remind">提醒设置</string>
+    <string name="text_backup">数据备份</string>
+    <string name="text_restore">恢复数据</string>
+    <string name="pwd_gesture">修改手势密码</string>
+    <string name="pwd_finger">设置指纹密码</string>
+    <string name="changePsw">修改密码</string>
+    <string name="text_login">文本密码登录</string>
+    <string name="gesture_login">手势密码登录</string>
+    <string name="finger_login">指纹密码登录</string>
+    <string name="finger_set">指纹密码设置</string>
+    <string name="log_in">登录</string>
+    <string name="wish">心愿墙</string>
+    <string name="set_psw">设置密码</string>
+</resources>

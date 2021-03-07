@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingStart="12dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/bar_rankitem_layout_circle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        >
+        <com.hyl.view.CircleImageView
+            android:id="@+id/bar_rankitem_circle_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="#f8f4e6"
+            android:layout_centerInParent="true"
+            />
+        <ImageView
+            android:id="@+id/bar_rankitem_circle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/qitashouru"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bar_rankitem_category"
+        android:layout_toEndOf="@+id/bar_rankitem_layout_circle"
+        android:layout_marginStart="19dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="食品酒水-早午晚餐"
+        android:textColor="@color/text_black3"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/bar_rankitem_time"
+        android:layout_toEndOf="@+id/bar_rankitem_category"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-10-28"
+        android:textColor="@color/text_black6"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/bar_rankitem_money"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textColor="@color/text_black3"
+        android:textSize="18sp"/>
+
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"/>
+
+</RelativeLayout>
+

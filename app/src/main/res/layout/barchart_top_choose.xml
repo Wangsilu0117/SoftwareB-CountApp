@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layout_bar_begin_data"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bar_begin_data_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020\n年"
+            android:textColor="@color/text_black6"
+            android:textSize="15sp"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bar_begin_data_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/bar_begin_data_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"
+                app:drawableEndCompat="@mipmap/ic_down" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="到"
+        android:textColor="@color/text_black6"
+        android:textSize="15sp"
+        android:singleLine="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_bar_end_data"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bar_end_data_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020\n年"
+            android:textColor="@color/text_black6"
+            android:textSize="15sp"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bar_end_data_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/bar_end_data_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="@color/text_black6"
+                android:textSize="15sp"
+                android:singleLine="true"
+                app:drawableRightCompat="@mipmap/ic_down" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="41dp"
+        android:background="#DCDCDC"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar_by_saler"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bar_shangjiafenlei"
+            />
+
+        <TextView
+            android:id="@+id/bar_by_saler_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商家"
+            android:textColor="@color/text_black6"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar_by_member"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bar_chengyuanfenlei"
+            />
+
+        <TextView
+            android:id="@+id/bar_by_member_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成员"
+            android:textColor="@color/text_black6"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar_by_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bar_xiangmufenlei"
+            />
+
+        <TextView
+            android:id="@+id/bar_by_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目"
+            android:textColor="@color/text_black6"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="3dp"
+        android:paddingEnd="8dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bar_by_accounts"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bar_zhanghufenle"
+            />
+
+        <TextView
+            android:id="@+id/bar_by_accounts_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账户"
+            android:textColor="@color/text_black6"
+            android:textSize="12sp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

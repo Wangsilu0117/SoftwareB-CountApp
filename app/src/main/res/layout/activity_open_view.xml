@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0d9ef"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/daytime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white">
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="160dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/text_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cycleanytext_shape"
+            android:text="@string/text_login"
+            style="@style/textstyle"
+            tools:ignore="ButtonStyle">
+
+        </Button>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gesture_login"
+            style="@style/textstyle"
+            android:background="@drawable/cycleanytext_shape"
+            tools:ignore="ButtonStyle"
+            android:id="@+id/gesture_login">
+
+        </Button>
+
+        <Button
+            android:id="@+id/finger_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cycleanytext_shape"
+            android:text="@string/finger_login"
+            style="@style/textstyle"
+            tools:ignore="ButtonStyle">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

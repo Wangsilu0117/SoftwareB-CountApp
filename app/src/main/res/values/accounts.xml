@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accounts">
+        <item>所有账户</item>
+        <item>现金</item>
+        <item>信用卡</item>
+        <item>银行卡</item>
+        <item>饭卡</item>
+        <item>公交卡</item>
+        <item>支付宝</item>
+        <item>微信钱包</item>
+        <item>应付款项</item>
+        <item>应收款项</item>
+        <item>投资</item>
+        <item>股票</item>
+        <item>item</item>
+    </string-array>
+</resources>

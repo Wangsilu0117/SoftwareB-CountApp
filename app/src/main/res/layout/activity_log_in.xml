@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a0d9ef"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="250dp">
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="@string/password"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@id/text_2"
+            android:inputType="textPassword"
+            android:id="@+id/Edit_password"
+            android:autofillHints="">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cycleanytext_shape"
+            android:text="@string/log_in"
+            style="@style/textstyle"
+            tools:ignore="ButtonStyle">
+
+        </Button>
+
+        <!--Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enroll"
+            style="@style/textstyle"
+            android:background="@drawable/cycleanytext_shape"
+            tools:ignore="ButtonStyle"
+
+            android:id="@+id/btn_enroll">
+
+        </Button-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <!-- forget password button -->
+            <TextView
+                android:id="@+id/txtForgetPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:text="@string/forgetPwd"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:onClick="OnMyResPwdClick"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+            <!-- start register button -->
+            <TextView
+                android:id="@+id/txtStartRegist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/changePsw"
+                android:textColor="#000000"
+                android:clickable="true"
+                android:onClick="OnMyChangePwdClick"
+                android:textSize="15sp"
+                tools:ignore="OnClick" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

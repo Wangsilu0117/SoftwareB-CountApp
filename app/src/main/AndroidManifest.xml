@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hyl.accountbook"
+    android:requestLegacyExternalStorage="true"
+    tools:targetApi="q">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name=".Alarm" />
+        <activity android:name=".FingerSet" />
+        <activity android:name=".Log_in" />
+        <activity android:name=".Finger" />
+        <activity android:name=".GesturePwdSet" />
+        <activity android:name=".RstGesturePwd" />
+        <activity android:name=".ChoosePwd" />
+        <activity android:name=".ChangePsw" />
+        <activity android:name=".Act" />
+        <activity android:name=".OpenView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewCategoryActivity"
+            android:label="@string/title_activity_new_category"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TransferActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".ResPwdActivity" />
+        <activity android:name=".SpendingActivity" />
+        <activity android:name=".WishActivity" />
+        <activity android:name=".CountActivity" />
+        <activity android:name=".ExpenseProcesActivity" />
+        <activity
+            android:name=".KeyPad"
+            android:theme="@style/AppThemeDialogIsTranslucent" />
+        <activity android:name=".pwd_text_set" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity android:name=".Settings_activity" />
+        <activity android:name=".WatchFlowActivity" />
+        <activity
+            android:name=".AccountsActivity"
+            android:label="账户"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AccountsDetailActivity"
+            android:label="账户管理"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CreateAccountsActivity"
+            android:label="新建账户"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChartActivity"
+            android:label="图表分析"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".AlarmReceiver" />
+
+
+
+    </application>
+
+<!--    <&#45;&#45;!在SD卡中创建与删除文件权限&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>-->
+<!--    <&#45;&#45;!向SD卡写入数据的权限-&ndash;&gt;-->
+<!--    <uses-permission android:name="androd.permission.WRITE_EXTERNAL_STORAGE"/>-->
+<!--    <&#45;&#45;!读取数据的权限-&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+</manifest>

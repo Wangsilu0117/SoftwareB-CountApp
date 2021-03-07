@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">1dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_icon_radius">25px</dimen>
+    <dimen name="linkage_width">12dp</dimen>
+    <!--24px|8px|8px-->
+    <dimen name="linkage_magin">4dp</dimen>
+    <dimen name="linkage_magin_top">@dimen/linkage_magin</dimen>
+</resources>

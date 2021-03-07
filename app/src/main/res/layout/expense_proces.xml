@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    style="@style/common_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ebf6f7">
+        <TextView
+            android:id="@+id/title_tv"
+            android:text="记账"
+            style="@style/common_title"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="446dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="85.0dip"
+                    android:layout_marginLeft="6.0dip">
+                    <Button
+                        android:textSize="25.0dip"
+                        android:id="@+id/cost_btn"
+                        android:textStyle="bold"
+                        android:textColor="@color/white1"
+                        android:textColorHint="@color/white1"
+                        android:gravity="right|center"
+                        android:background="#89c3eb"
+                        android:paddingRight="10.0dip"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="52.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:layout_marginTop="15.0dip"
+                        android:hint="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="50.0dip">
+                            <TextView
+                                android:text="分类"
+                                android:id="@+id/txtBigCategory"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                            <Button
+                                android:id="@+id/btn_Options"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/tvTime"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:textSize="16sp"
+                                />
+                        <!--<com.bigkoo.pickerview.lib.WheelView
+                            android:id="@+id/tv_options"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />-->
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="账户"
+                                android:id="@+id/txtAccount"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                            <Button
+                                android:id="@+id/account_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/tvTime"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:textSize="16sp" />
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:id="@+id/corporation_fl"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="商家"
+                                android:id="@+id/txtShop"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                            <Button
+                                android:id="@+id/shop_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/tvTime"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:textSize="16sp"
+                                />
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="成员"
+                                android:id="@+id/txtMember"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                            <Button
+                                android:id="@+id/member_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/tvTime"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:textSize="16sp"
+                                />
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="项目"
+                                android:id="@+id/txtEvent"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                            <Button
+                                android:id="@+id/event_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_below="@+id/tvTime"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:background="@color/transparent"
+                                android:textSize="16sp"
+                                />
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:id="@+id/project_spn_fl"
+                            android:layout_width="159.0dip"
+                            android:layout_height="fill_parent">
+                            <TextView
+                                android:text="时间"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                        </FrameLayout>
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:background="@mipmap/form_row_input_divider"
+                            android:layout_width="1.0dip"
+                            android:layout_height="38.0dip" />
+                        <FrameLayout
+                            android:id="@+id/trade_time_fl"
+                            android:layout_width="159.0dip"
+                            android:layout_height="fill_parent">
+                            <Button
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:id="@+id/trade_time_btn"
+                                android:background="@drawable/form_row_input_middle_short_left"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" />
+                            <ImageView style="@style/form_row_go_detail" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:paddingLeft="0.0dip"
+                        android:paddingRight="0.0dip"
+                        android:layout_height="50dp"
+                        style="@style/form_row_input_middle">
+                        <FrameLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="备注"
+                                android:id="@+id/txtNote"
+                                style="@style/form_row_label"
+                                android:textColor="@color/black" />
+                        </FrameLayout>
+
+                        <EditText
+                            android:id="@+id/editnote"
+                            style="@style/textstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textSize="15dp"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLength="16"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:id="@+id/empty_fl"
+                        android:visibility="gone"
+                        style="@style/form_row_input_middle" />
+
+                    <RelativeLayout
+                        style="@style/form_row_layout_middle"
+                        android:layout_height="102dp"
+                        android:background="@mipmap/form_row_layout_bottom" >
+
+                        <Button
+                            android:id="@+id/save_btn"
+                            style="@style/common_toolbar_btn_for_addexpense"
+                            android:layout_width="115.0dip"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="20dp"
+                            android:onClick="OnMySaveClick"
+                            android:text="@string/save" />
+
+                        <Button
+                            android:id="@+id/saving_btn"
+                            style="@style/common_toolbar_btn_for_addexpense"
+                            android:layout_width="115.0dip"
+                            android:layout_centerHorizontal="true"
+                            android:onClick="OnMySavingClick"
+                            android:text="又一笔" />
+
+                        <Button
+                            android:id="@+id/cancel_btn"
+                            style="@style/common_toolbar_btn_for_addexpense"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:onClick="OnMyCancelClick"
+                            android:text="@string/cancel" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

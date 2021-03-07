@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings_activity">
+
+    <Button
+        android:id="@+id/button_pwd_text_set"
+        android:layout_width="fill_parent"
+        android:layout_height="63dp"
+        android:text="@string/set_psw"
+        android:background="@drawable/setting_button_style"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:layout_marginTop="70dp"
+        style="@style/textstyle"
+        tools:ignore="ButtonStyle"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+
+    <Button
+        android:id="@+id/button_pwd_text_change"
+        android:layout_width="fill_parent"
+        android:layout_height="63dp"
+        android:text="修改密码"
+        android:background="@drawable/setting_button_style"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        style="@style/textstyle"
+        tools:ignore="ButtonStyle" />
+</LinearLayout>
